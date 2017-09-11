@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    //构造函数的首字母一定要大写
+    //调用的时候一定要配合关键字new来使用
+    function Person(name,age,sex){
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+    }
+    var person = new Person("王老师",18,"男");
+    console.log(person);
+</script>
+</body>
+</html>

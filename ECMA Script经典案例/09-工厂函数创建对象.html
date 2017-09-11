@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    //工厂函数在创建的时候一定要添加返回值
+    function person(name,age,sex){
+        var person = new Object();
+        person.name = name;
+        person.age = age;
+        person.sex = sex;
+        return person;
+    }
+    var Person = person("sdf",12,"man");
+    console.log(Person);
+</script>
+</body>
+</html>
