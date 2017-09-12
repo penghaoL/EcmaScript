@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    function formatDate(d) {
+        //如果date不是日期对象，返回
+        if (!date instanceof Date) {
+            return;
+        }
+        var year = d.getFullYear(),
+                month = d.getMonth() + 1,
+                date = d.getDate(),
+                hour = d.getHours(),
+                minute = d.getMinutes(),
+                second = d.getSeconds();
+        month = month < 10 ? '0' + month : month;
+        date = date < 10 ? '0' + date : date;
+        hour = hour < 10 ? '0' + hour : hour;
+        minute = minute < 10 ? '0' + minute:minute;
+        second = second < 10 ? '0' + second:second;
+        return year + '-' + month + '-' + date + ' ' + hour + ':' + minute + ':' + second;
+    }
+    formatDate(1505219964857);
+
+</script>
+</body>
+</html>
